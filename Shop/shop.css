@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #d88e2c;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+
+
+}
+
+
+#seksioni-produktet {
+    margin-right: 0;
+    margin-left: 150px;
+    display: flex;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 6em;
+    column-gap: 2em;
+    text-align: center;
+}
+
+.container div div a img {
+    height: 350px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.category {
+    padding: 5px;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    background-color: rgb(171, 194, 241);
+
+}
+
+#flowers-h1 {
+    margin-top: 30px;
+}
+
+#Flowers {
+    margin-top: 100px;
+    /* border:1px red dashed; */
+}
+
+.product {
+    position: relative;
+    padding: 0px;
+}
+
+.product div a {
+    padding: 0px;
+}
+
+div.product-footer {
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+}
+
+div.product-footer a h3 {
+    color: black;
+    text-shadow: none;
+}
+
+div.product-footer h4 {
+    color: #d88e2c;
+    text-shadow: none;
+}
+
+div.product:hover div.product-footer {
+    margin-top: -50px;
+    transition: 0.5s ease-in-out;
+}
+
+div.product {
+    box-shadow: 0 50px 40px rgba(116, 114, 114, 0.5);
+}
+
+div.product:hover img {
+    filter: brightness(50%);
+    transition: 0.5s ease-in-out;
+}
+
+div.product:hover {
+    transform: scale(1.1);
+    box-shadow: 0 25px 40px rgba(116, 114, 114, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+div.product .product-footer button {
+    display: none;
+    font-family: 'Rajdhani', sans-serif;
+    width: 100px;
+    margin: auto;
+    margin-bottom: 5px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 13px;
+    background-color: #143243;
+}
+
+div.product:hover .product-footer button {
+    display: block;
+    animation: fadeIn ease-in 0.7s;
+}
+
+div.product .product-footer button:hover {
+    background-color: #369341;
+    transition: 1s ease-in-out;
+}
+
+div.product .product-footer a h3:hover {
+    color: rgb(131, 131, 131);
+    transition: 0.7s;
+}
+
+body {
+    position: relative;
+}
+
+dl dd {
+    text-align: right;
+}
+
+dl dt {
+    display: inline;
+}
+
+dl dd.inline {
+    float: right;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
