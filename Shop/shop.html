@@ -33,6 +33,21 @@
         </div>
 
     </section>
+    
+    <div id="yourCart" style="z-index: 3000; margin-top:20px;">
+        <h2 style="text-decoration: underline; color:#333;">Your Cart</h2>
+        <div id="scrollable">
+            <dl id="cartList">
+
+            </dl>
+        </div>
+        <div id="bottom">
+            <h2 id = "bottom-h2" style="color:#333;">Total: <span id="totalPrice" style="color:#333;">0.00€</span><span id="discount"></span><span id="newTotal"></span></h2>
+            <button id="checkout" onclick="openForm()" style="width: 120px; background-color: #d88e2c;"
+                onMouseOver="this.style.backgroundColor='#333'"
+                onMouseOut="this.style.backgroundColor=' #d88e2c'">CHECKOUT</button>
+        </div>
+    </div>
     </section>
 
 
