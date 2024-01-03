@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Care</title>
+
+    <!-- Add Bootstrap CSS link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="care.css">
     <script>
         function showFlowerInfo(flowerName) {
@@ -16,42 +20,59 @@
 </head>
 
 <body>
-    <div class="care-btn">
-        <button type="button" onclick="showFlowerInfo('flowers-info')">Care</button>
-    </div>
-    <div id="flowers-info" style="display: none;">
-        <div class="roses-container">
-            <div class="roses-img">
-                <img src="./assets/rose.jpg" alt="Roses" class="img-style">
-            </div>
-            <div class="roses-info">
-                <h2>Roses</h2>
-                <p>Roses are one of the most popular types of flowers, and they come in different colors and sizes.
-                    <br> To care for your roses, make sure they get enough sunlight, at least six hours a day.
-                    <br> Water them regularly, but do not overwater them, as this can lead to root rot.
-                    <br>Fertilize your roses with a balanced fertilizer every four to six weeks during the growing
-                    season.
-                    <br>Prune your roses regularly to remove dead or diseased branches.
-                </p>
-            </div>
+    <div class="container mt-3">
+
+        <div class="care-btn">
+            <button type="button" class="btn btn-primary" onclick="showFlowerInfo('flowers-info')">Care</button>
         </div>
-        <div class="tulips-container">
-            <div class="tulips-img" >
-                <img src="./assets/tulip.jpg" alt="Tulips" class="img-style">
+
+        <div id="flowers-info" style="display: none;">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="roses-container">
+                        <div class="roses-img">
+                            <img src="./assets/rose.jpg" alt="Roses" class="img-style">
+                        </div>
+                        <div class="roses-info">
+                            <h2>Roses</h2>
+                            <p>Roses are one of the most popular types of flowers, and they come in different colors and
+                                sizes.
+                                <br> To care for your roses, make sure they get enough sunlight, at least six hours a
+                                day.
+                                <br> Water them regularly, but do not overwater them, as this can lead to root rot.
+                                <br>Fertilize your roses with a balanced fertilizer every four to six weeks during the
+                                growing season.
+                                <br>Prune your roses regularly to remove dead or diseased branches.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="tulips-container">
+                        <div class="tulips-img">
+                            <img src="./assets/tulip.jpg" alt="Tulips" class="img-style">
+                        </div>
+                        <div class="tulips-info">
+                            <h2>Tulips</h2>
+                            <p>
+                                Tulips are another popular type of flowering plant. They come in different colors, and
+                                some have beautiful patterns on their petals.
+                                <br>Tulips prefer well-draining soil and need to be watered regularly.
+                                <br>However, do not overwater them, as this can lead to root rot. Tulips also need
+                                sunlight, but they can tolerate some shade.
+                                <br>After the tulips have bloomed, cut off the flowers but leave the leaves to die off
+                                naturally.
+                                <br>This will allow the plant to store energy for next year’s bloom.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="tulips-info">
-                <h2>Tulips</h2>
-                <p>
-                    Tulips are another popular type of flowering plant. They come in different colors, and some have
-                    beautiful patterns on their petals.
-                    <br>Tulips prefer well-draining soil and need to be watered regularly.
-                    <br>However, do not overwater them, as this can lead to root rot. Tulips also need sunlight, but they
-                    can tolerate some shade.
-                    <br>After the tulips have bloomed, cut off the flowers but leave the leaves to die off naturally.
-                    <br>This will allow the plant to store energy for next year’s bloom.
-                </p>
-            </div>
-            </div>
+
+<div class="row">
+    <div class="col-md-6">
         <div class="daisy-container">
             <div class="daisy-img">
                 <img src="./assets/daisy.jpg" alt="Daisies" class="img-style">
@@ -65,12 +86,14 @@
                     <br> Fertilize your daisies with a balanced fertilizer every four to six weeks during the growing
                     season.
                 </p>
-            </div> 
+            </div>
         </div>
+    </div>
 
+    <div class="col-md-6">
         <div class="lilies-container">
             <div class="lilies-img">
-            <img src="./assets/lilies.jpg" alt="Lilies" class="img-style">
+                <img src="./assets/lilies.jpg" alt="Lilies" class="img-style">
             </div>
             <div class="lilies-info">
                 <h2>Lilies</h2>
@@ -83,8 +106,12 @@
                 </p>
             </div>
         </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
         <div class="orchid-container">
-            <div class="orchid-img"> 
+            <div class="orchid-img">
                 <img src="./assets/orchids.jpg" alt="Orchids" class="img-style">
             </div>
             <div class="orchid-info">
@@ -99,7 +126,12 @@
             </div>
         </div>
     </div>
+</div>
 
 </body>
+</html>
 
+        </div>
+    </div>
+</body>
 </html>
