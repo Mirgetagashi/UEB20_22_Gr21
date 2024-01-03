@@ -21,7 +21,7 @@ body {
     display: flex;
     margin: 15px;
     justify-content: space-between;
-    width: 75%;
+    width: 83%;
 }
 
 .roses-img {
@@ -32,6 +32,8 @@ body {
 .roses-info{
     text-decoration-style: inherit;
     text-decoration-color: black;
+    width: 58%;
+    text-align: center;
     
 }
 .tulips-container {
@@ -46,6 +48,10 @@ body {
     width: 450px;
     height: 300px;
 }
+.tulips-info{
+    text-align: center;
+    width: 83%;
+}
 .daisy-container {
     display: flex;
     margin: 15px;
@@ -57,6 +63,10 @@ body {
     width: 450x;
     height: 300px;
 }
+.daisy-info{
+    width: 68%;
+    text-align: center;
+}
 .lilies-container {
     display: flex;
     margin: 15px;
@@ -64,9 +74,14 @@ body {
     width: 105%;
 }
 .lilies-img{
-    right: 20%;
+    right: 10%;
     width: 450px;
     height: 300px;
+}
+.lilies-info{
+    width: 150%;
+    text-align: center;
+    margin-left: 3%;
 }
 .orchid-container {
     display: flex;
@@ -78,4 +93,21 @@ body {
     right: 20%;
     width: 500px;
     height: 500px;
+}
+.orchid-info{
+  text-align: center;
+    width: 110%;
+}
+
+.row {
+    display: block;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 250%;
+    
+}
+
+.col-md-6 {
+    display: flex;
+    max-width: 48%;
 }
