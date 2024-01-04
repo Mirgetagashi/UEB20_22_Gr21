@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single product</title>
+    <link rel="stylesheet" type="text/css" href="SingleProduct.css">
+    <script type="text/javascript" src="jquery-3.5.1.js"></script>
+</head>
+<body>
+
+
+    <div class="flex-container">
+        <div id="img-containter">
+            <img src="foto1.jpg" id="big-img">
+        </div>
+        <div id="right-div">
+            <h1 id="title">Title</h1>
+            <h1 id="price" class="red">Price: </h1>
+            <p id="category" class="smaller">CATEGORY: </p>
+            <button id="to-cart" class="back-red">ADD TO CART</button>
+            <button id="buy-now" class="back-yellow" >BUY NOW</button>
+        </div>
+    </div>
+
+    <script>
+         var product = JSON.parse(localStorage.getItem('prod'));
+
+        document.getElementById("title").innerHTML = product.title;
+        document.getElementById("price").innerHTML += product.price;
+        document.getElementById("big-img").src = product.image;
+        document.getElementById("producer").innerHTML += product.producer;
+        document.getElementById("category").innerHTML += product.category;
+        document.getElementById("city").innerHTML += product.city;
+
+    </script>
+
+    
+</body>
+</html>
