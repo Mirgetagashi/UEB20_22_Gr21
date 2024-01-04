@@ -18,6 +18,7 @@ header{
    justify-content: space-between;
    padding: 33px 3%;
    background: transparent;
+   background-attachment: fixed;
 
 }
 
