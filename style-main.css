@@ -40,7 +40,7 @@ header{
 }
 .navlist a:hover{
    border-bottom: 2px solid white;
-}
+   }
 #menu-icon{
    color: white;
    font-size: 45px;
@@ -53,7 +53,7 @@ header{
    height: 100%;
    width: 100%;
    min-height: 100vh;
-   background: url(/Photos/3.png);
+   background: url(./Photos/3.png);
    background-repeat: no-repeat;
    object-fit: cover;
    background-size: cover;
@@ -305,7 +305,7 @@ h3{
 
 }
 .page2{
-   background: url(/Photos/page22.svg);
+   background: url(./Photos/page22.svg);
 }
 
  main { 

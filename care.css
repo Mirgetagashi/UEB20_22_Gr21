@@ -5,12 +5,53 @@ body {
     font-size: 115%;
     text-align: left;
     margin: 30px;
+    margin-top: 100px;
     background-attachment: fixed;
-    background-color: rgb(240, 216, 216);
+    background-color: rgba(179,195,221,255);
 }
+.header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 3%;
+    background: transparent;
+ }
+ .logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+ 
+ }
+ .navlist{
+    display: flex;
+ }
+ .navlist,a{
+     color: white;
+     margin-left: 60px;
+     font-size: 17px;
+     font-weight: 600 ;
+     border-bottom: 2px solid transparent;
+     transition: all .55s ease;
+ }
+ .navlist a:hover{
+    border-bottom: 2px solid white;
+    }
+ #menu-icon{
+    color: white;
+    font-size: 45px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+ } 
 
 .flowers-info {
     padding: 2px;
+    display: block;
 }
 .img-style{
     width: 300px;
@@ -20,27 +61,25 @@ body {
 .roses-container {
     display: flex;
     margin: 15px;
-    justify-content: space-between;
-    width: 83%;
+    /* justify-content: space-between; */
+    width: 100%;
 }
 
 .roses-img {
-    right: 20%;
-    width: 450px;
-    height: 300px;
+    /* right: 20%; */
+    width: 30%;
+    /* height: 300px; */
 }
 .roses-info{
     text-decoration-style: inherit;
     text-decoration-color: black;
-    width: 58%;
+    width: 70%;
     text-align: center;
-    
 }
 .tulips-container {
     display: flex;
     margin: 15px;
-    justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 
 .tulips-img {   
@@ -56,7 +95,7 @@ body {
     display: flex;
     margin: 15px;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
 }
 .daisy-img{
     right: 20%;
@@ -71,7 +110,7 @@ body {
     display: flex;
     margin: 15px;
     justify-content: space-between;
-    width: 105%;
+    width: 100%;
 }
 .lilies-img{
     right: 10%;
@@ -87,7 +126,7 @@ body {
     display: flex;
     margin: 15px;
     justify-content: space-between;
-    width: 95%;
+    width: 100%;
 }
 .orchid-img{
     right: 20%;
@@ -96,18 +135,17 @@ body {
 }
 .orchid-info{
   text-align: center;
-    width: 110%;
+    width: 100%;
 }
 
 .row {
     display: block;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 250%;
-    
+    width: 100%;
 }
 
 .col-md-6 {
     display: flex;
-    max-width: 48%;
+    max-width: 100%;
 }
