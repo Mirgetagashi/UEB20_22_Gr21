@@ -11,17 +11,13 @@ a {
     text-decoration: none;
 }
 
-.wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    color: #d88e2c;
-}
+
 
 body {
     height: 100vh;
     position: relative;
-
-
+    background-color: rgb(182, 199, 224);
+    
 }
 
 
@@ -48,12 +44,19 @@ body {
 
 
 .category {
+    font-size: 150%;
     padding: 5px;
     text-align: center;
     margin-top: 80px;
     margin-bottom: 20px;
-    background-color: rgb(171, 194, 241);
+    text-shadow: 1px 1px 2px rgb(91, 112, 185);
+    background-color: rgb(167, 188, 216);
 
+}
+
+#gifts-h1{
+
+ background-color:  rgb(148, 176, 212);
 }
 
 #flowers-h1 {
@@ -122,7 +125,7 @@ div.product .product-footer button {
     padding: 8px;
     color: white;
     font-size: 13px;
-    background-color: #143243;
+    background-color: #45426b;
 }
 
 div.product:hover .product-footer button {
@@ -131,7 +134,7 @@ div.product:hover .product-footer button {
 }
 
 div.product .product-footer button:hover {
-    background-color: #369341;
+    background-color: #2a7e74;
     transition: 1s ease-in-out;
 }
 
@@ -143,6 +146,108 @@ div.product .product-footer a h3:hover {
 body {
     position: relative;
 }
+
+#yourCart {
+    position: fixed;
+    right: 75px;
+    top: 100px;
+    width: 250px;
+    height: 550px;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 20px rgba(116, 114, 114, 0.5);
+  }
+
+  #bottom {
+    position: absolute;
+    bottom: 20px;
+  }
+  
+  #scrollable {
+    overflow-y: auto;
+    max-height: 380px;
+  }
+
+  .custom-shape-divider-top-1610755808 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+  
+  .custom-shape-divider-top-1610755808 svg {
+    position: relative;
+    display: block;
+    width: calc(184% + 1.3px);
+    height: 500px;
+  }
+  
+  .custom-shape-divider-top-1610755808 .shape-fill {
+    fill: rgb(202, 218, 239);
+    opacity: 0.8;
+  }
+
+
+
+  .custom-shape-divider-bottom-1610755546 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+  
+  .custom-shape-divider-bottom-1610755546 svg {
+    position: relative;
+    display: block;
+    width: calc(177% + 1.3px);
+    height: 248px;
+  }
+  
+  .custom-shape-divider-bottom-1610755546 .shape-fill {
+    fill:  rgb(167, 188, 216);
+    opacity: 0.5;
+  }
+
+  
+  #checkout {
+    width: 100px;
+    border: 0px;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+    font-size: 17px;
+    background: #45426b;
+  }
+  
+  #checkout:hover {
+    background-color: rgb(0, 0, 0);
+    color:white;
+    transition: 1s;
+  }
+  
+
+  #cartList button {
+    color: rgb(194, 194, 194);
+    border: 0px;
+    padding: 5px;
+    padding-left: 0px;
+    margin-right: 5px;
+    background-color: transparent;
+  }
+  
+  #cartList button:hover {
+    color:#1d35be;
+    transition: 0.5s;
+  }
+
+
+
 
 dl dd {
     text-align: right;
@@ -165,3 +270,6 @@ dl dd.inline {
         opacity: 1;
     }
 }
+
+
+
