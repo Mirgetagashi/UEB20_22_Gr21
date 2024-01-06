@@ -186,7 +186,6 @@ dl dd.inline {
     border: 5px solid #f1f1f1;
     z-index: 5001;
     max-width: 600px;
-   /* border-image: linear-gradient(rgb(127, 148, 179), rgb(182, 199, 224)) 27;*/
 }
 
 .form-popup h4 {
