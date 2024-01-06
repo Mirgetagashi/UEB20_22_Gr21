@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+ }
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 * {
@@ -272,26 +276,6 @@ dl dd.inline {
 }
 
 
-.headeri {
-    position: fixed;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 33px 3%;
-    background: transparent;
-  }
-  
 
-  .headeri {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
 
 
