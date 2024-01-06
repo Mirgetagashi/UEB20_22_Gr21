@@ -56,7 +56,7 @@ body {
 
 #gifts-h1{
 
- background-color:  rgb(148, 176, 212);
+ background-color:   rgb(222, 230, 240);
 }
 
 #flowers-h1 {
@@ -271,5 +271,27 @@ dl dd.inline {
     }
 }
 
+
+.headeri {
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 3%;
+    background: transparent;
+  }
+  
+
+  .headeri {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
 
 
