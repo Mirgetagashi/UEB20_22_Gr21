@@ -57,7 +57,7 @@ header{
    height: 100%;
    width: 100%;
    min-height: 100vh;
-   background: url(/Photos/3.png);
+   background: url(./Photos/3.png);
    background-repeat: no-repeat;
    object-fit: cover;
    background-size: cover;
@@ -335,7 +335,7 @@ h3{
    margin-top: 15px;
 }
 .page2{
-   background: url(/Photos/page22.svg);
+   background: url(./Photos/page22.svg);
 }
 
  main { 
@@ -456,4 +456,3 @@ h3{
             line-height: 25px;
             font-size: 15px;
          }}
-
