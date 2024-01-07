@@ -190,17 +190,21 @@ section{
    
 }
 @media (max-width:1440px){
-   section{
-      padding: 0 10%;
+   section {
+
+      padding: 0 2%;
+   }
+   .hero-text h4{
+      font-size: 50px;
    }
 }
 @media (max-width:1440px){
    .hero-img{
-      width: 60%;
+      width: 99%;
       height: auto;
    }
    .hero-text{
-      font-size: 75px;
+      font-size: 25px;
       margin: 0 0 30px;
    }
    .hero-text h5{
@@ -209,7 +213,7 @@ section{
 }
 @media (max-width:1195px){
    section{
-      padding: 0 3%;
+      padding: 0 2.3%;
       transition: .2s ;
    }
    .hero-text{
@@ -240,6 +244,11 @@ section{
 #menu-icon{
    display: block;
 }
+}
+@media (max-width:1000px){
+   h4{
+      font-size: 25px;
+   }
 .navlistt{
    position: absolute;
    top: 100%;
@@ -264,7 +273,7 @@ section{
 }
 @media (max-width:680px){
    .hero-img{
-      width: 70%;
+      width: 90%;
       height: auto;
    }
 }
@@ -280,7 +289,7 @@ section{
    margin-top: 50px;
 }
 .card{
-   width: 370px;
+   width: 300px;
    background-color: #f0f0f0;
    border-radius: 8px;
    overflow: hidden;
@@ -448,6 +457,12 @@ h3{
          font-size: 3px;
     
       }}
+@media (max-width:1440px){
+   .hero-desc h2{     
+            font-size: 48px;
+         }    
+      }
+
 
 /* footer section */
 .section-subscribe{
