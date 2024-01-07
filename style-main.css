@@ -456,3 +456,89 @@ h3{
             line-height: 25px;
             font-size: 15px;
          }}
+/* footer section */
+.section-subscribe{
+   padding: 3rem 0;
+}
+.form-control{
+   outline: none;
+   -webkit-box-shadow:none !important;
+   box-shadow: none !important;
+   height: 50px;
+}
+.form-control:focus{
+   -webkit-box-shadow:0px 3px 10px -2px rgba(0,0,0,0.2) !important;
+   box-shadow:0px 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+.form-control:focus, .form-control:active{
+   outline: none;
+}
+.btn{
+   -webkit-box-shadow:0px 3px 10px -2px rgba(0,0,0,0.2) !important;
+   box-shadow:0px 3px 10px -2px rgba(0,0,0,0.2) !important;
+}
+.btn.btn-secondary{
+   color: white;
+   border-width: 2px;
+   background: #BED0EB;
+   border-color: white;
+   padding: 10px;
+}
+.site-footer{
+   padding: 5rem 0;
+   background: #BED0EB;
+   font-size: 14px;
+   color: grey;
+}
+.site-footer p:last-child{
+   margin-bottom: 0;
+}
+.site-footer a{
+   text-decoration: none;
+   color: grey;
+   border-bottom: 1px solid transparent;
+}
+.site-footer a:hover{
+   color: white;
+   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.site-footer h2{
+   font-size: 22px;
+   margin-bottom: 28px;
+   letter-spacing: .05rem;
+
+}
+.site-footer, .footer-link li{
+   line-height: 1.5;
+   margin-bottom: 10px;
+}
+.footer-social a{
+   margin-left: 0px !important;
+   line-height: 0;
+   border-radius: 50%;
+   margin: 0 0 0 0;
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   width: 30px;
+   height: 30px;
+   text-align: center;
+   display: inline-block;
+
+}
+.footer-social a:hover {
+   background: #fff;
+   border-color: #fff;
+   color:#000;
+}
+footer-social .fa{
+      margin-top: 7px;
+}
+
+   /* Add this style to change the color on hover */
+   .btn {
+      transition: color 0.3s, box-shadow 0.3s; /* Add transition for a smooth effect */
+   }
+
+   .btn:hover {
+      color: #AFC1E0; /* Change to the desired hover color */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.5); /* Add black box shadow on hover */
+   }
