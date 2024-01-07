@@ -1,14 +1,13 @@
 html{
    scroll-behavior: smooth;
 }
-
 *{
    padding: 0;
    margin: 0;
    box-sizing: border-box;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Montserrat', sans-serif ;
    list-style: none;
-   text-decoration: none;
+   text-decoration: none !important;
 
 }
 header{
@@ -26,15 +25,16 @@ header{
 }
 
 .logo{
-   font-size: 30px;
-   font-weight: 700;
+   font-size: 42px;
+   font-weight: 900;
    color: white;
+   font-family: 'Cinzel Decorative', cursive;
 
 }
-.navlist{
+.navlistt{
    display: flex;
 }
-.navlist,a{
+.navlistt,.menu a{
     color: white;
     margin-left: 60px;
     font-size: 17px;
@@ -42,7 +42,7 @@ header{
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
-.navlist a:hover{
+.navlistt a:hover{
    border-bottom: 2px solid white;
 }
 #menu-icon{
@@ -57,6 +57,7 @@ header{
    height: 100%;
    width: 100%;
    min-height: 100vh;
+   background: url(/Photos/3.png);
    background: url(./Photos/3.png);
    background-repeat: no-repeat;
    object-fit: cover;
@@ -72,22 +73,24 @@ section{
    padding: 0 0 0 8% ;
 }
 .hero-text h5{
+   
    font-size: 14px;
    font-weight: 400;
    color: white;
    margin-bottom: 40px;
 }
 .hero-text h1{
-   font-family: 'Poppins',cursive;
+   font-family: 'Playfair Display', serif;
    font-size: 120px;
    line-height: 1;
    color: white;
    margin: 0 0 45px;
 }
 .hero-text h4{
+   font-weight: 550;
    font-size: 66px;
    color: white;
-   font-family: 'Montserrat',cursive;
+   font-family: 'Montserrat', sans-serif !important;
 
 }
 .hero-text p{
@@ -139,7 +142,7 @@ section{
    top: 46%;
    padding: 0 1.85%;
    transform: translateY(-50%);
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .icon i {
    display: block;
@@ -193,7 +196,7 @@ section{
 }
 @media (max-width:1440px){
    .hero-img{
-      width: 100%;
+      width: 60%;
       height: auto;
    }
    .hero-text{
@@ -206,7 +209,7 @@ section{
 }
 @media (max-width:1195px){
    section{
-      padding: 0 2%;
+      padding: 0 3%;
       transition: .2s ;
    }
    .hero-text{
@@ -237,7 +240,7 @@ section{
 #menu-icon{
    display: block;
 }
-.navlist{
+.navlistt{
    position: absolute;
    top: 100%;
    right: -100%;
@@ -250,25 +253,18 @@ section{
    padding: 50px 20px;
    transition: all .55s ease;
 }
-.navlist a{
+.navlistt a{
    display: block;
    margin: 7px 0;
    margin-left: 0;
 }
-.navlist.open{
+.navlistt.open{
    right: 50;
 }
 }
 @media (max-width:680px){
-   .logo{
-      margin-left: 0;
-      font-size: 40px;
-   }
-}
-
-@media (max-width:680px){
    .hero-img{
-      width: 100%;
+      width: 70%;
       height: auto;
    }
 }
@@ -284,7 +280,7 @@ section{
    margin-top: 50px;
 }
 .card{
-   width: 250px;
+   width: 370px;
    background-color: #f0f0f0;
    border-radius: 8px;
    overflow: hidden;
@@ -294,7 +290,7 @@ section{
 @media (max-width:1200px){
    .page2{
       width: 100%;
-      height: 100%;
+      height: 196vh;
    }}
 
 @media (max-width:1200px){
@@ -333,9 +329,11 @@ h3{
    text-decoration: none;
    border-radius: 12px;
    margin-top: 15px;
+
 }
 .page2{
-   background: url(./Photos/page22.svg);
+   background: url(/Photos/page22.svg);
+    background: url(./Photos/page22.svg);
 }
 
  main { 
@@ -395,7 +393,7 @@ h3{
  }
  .hero-desc h2 {
    font-family: "Abril Fatface";
-   font-size: 4rem;
+   font-size: 5rem;
  }
  .hero-desc p {
    padding: 2.4rem 0rem;
@@ -429,7 +427,7 @@ h3{
   flex-basis: 30rem;
 }
 .contact h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
   padding: 2rem 0rem;
 }
 .contact p {
@@ -438,24 +436,19 @@ h3{
 }
 @media (max-width:900px){
    .mountain slide{
-      margin: 0;
+  
+      margin-top: 0;
       padding-top: 0;
       width: auto;
       height: auto;
       font-size: 3px;
    }}
    @media (max-width:1200px){
-      .hero-desc h2 {
-         margin-top: 10%;
-         font-size: 35px;
-         
+      .title,h2{
+         font-size: 3px;
     
       }}
-   @media (max-width:1200px){
-      .hero-desc p {
-            line-height: 25px;
-            font-size: 15px;
-         }}
+
 /* footer section */
 .section-subscribe{
    padding: 3rem 0;
@@ -532,13 +525,12 @@ h3{
 footer-social .fa{
       margin-top: 7px;
 }
-
-   /* Add this style to change the color on hover */
-   .btn {
+/* Add this style to change the color on hover */
+.btn {
       transition: color 0.3s, box-shadow 0.3s; /* Add transition for a smooth effect */
    }
 
-   .btn:hover {
-      color: #AFC1E0; /* Change to the desired hover color */
+.btn:hover {
+      color: #AFC1E0; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.5); /* Add black box shadow on hover */
    }
