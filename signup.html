@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    
+    <script>
+        function validateForm() {
+            var username = document.getElementById('username').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var password = document.getElementById('password').value.trim();
+            var confirmPassword = document.getElementById('confirm-password').value.trim();
+
+            
+            clearErrorMessages();
+
+            var isValid = true;
+
+           
+            if (username === '' ) {
+                displayErrorMessage('username-error', 'Enter a valid username ');
+                isValid = false;
+            }
+
+            
+            if (email === '' || !isValidEmail(email)) {
+                displayErrorMessage('email-error', 'Enter a valid email address');
+                isValid = false;
+            }
+
+            
+            if (password === '') {
+                displayErrorMessage('password-error', 'Password must be filled out');
+                isValid = false;
+            } else if (password.length < 8) {
+                displayErrorMessage('password-error', 'Password must be at least 8 characters long');
+                isValid = false;
+            }
+
+            
+            if (confirmPassword === '') {
+                displayErrorMessage('confirm-password-error', 'Confirm password must be filled out');
+                isValid = false;
+            } else if (password !== confirmPassword) {
+                displayErrorMessage('confirm-password-error', 'Password and Confirm Password must match');
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Sign up successful!');
+            }
+            return isValid;
+        }
+        
+        
+
+        function isValidEmail(email) {
+            
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        function displayErrorMessage(elementId, message) {
+            var errorElement = document.getElementById(elementId);
+            errorElement.textContent = message;
+            errorElement.style.display = 'block';
+        }
+
+        function clearErrorMessages() {
+            var errorElements = document.getElementsByClassName('error-message');
+            for (var i = 0; i < errorElements.length; i++) {
+                errorElements[i].textContent = '';
+                errorElements[i].style.display = 'none';
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="container main">
+            <form id="signup" class="form" onsubmit="return validateForm()">
+                <div class="row">
+                    <div class="col-md-6 side-image">
+                        <div class="text">
+                            <p>Join the community <i>flower lovers</i></p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 right">
+                        <div class="input-box">
+                            <header>Create account</header>
+                            
+                            <div class="input-field">
+                                <input type="text" class="input" id="username" required pattern=".{3,25}">
+                                <label for="username">Username</label>
+                            </div>
+                            <div id="username-error" class="error-message"></div>
+                            
+                            <div class="input-field">
+                                <input type="text" class="input" id="email" required autocomplete="off">
+                                <label for="email">Email</label>
+                            </div>
+                            <div id="email-error" class="error-message"></div>
+                            
+                            <div class="input-field">
+                                <input type="password" class="input" id="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div id="password-error" class="error-message"></div>
+
+                            <div class="input-field">
+                                <input type="password" class="input" id="confirm-password" required>
+                                <label for="confirm-password">Confirm password</label>
+                            </div>
+                            <div id="confirm-password-error" class="error-message"></div>
+
+                            <div class="input-field">
+                                <input type="submit" class="submit" value="Sign up">
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+   
+</body>
+</html>
