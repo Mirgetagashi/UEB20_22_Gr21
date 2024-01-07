@@ -369,6 +369,22 @@ button:focus {
 .support a:hover {
   transform: scale(1.1);
 }
+.Title {
+  text-align: center;
+  max-width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  position: absolute;
+  top: calc(100px + 20px); /* Adjust 100px according to your header's height + additional spacing */
+  left: 0;
+  right: 0;
+  background-color: none; /* Adding a background color for visibility */
+  color: #fff;
+  font-size: 23px;
+  font-style: italic;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+}
 
 
 
