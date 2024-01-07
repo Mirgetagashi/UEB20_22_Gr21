@@ -232,3 +232,9 @@ const waitForImages = () => {
 };
 
 waitForImages();
+
+$(document).ready(function() {
+	$(".Title").hide().slideDown(800, function() {
+	  $(this).fadeIn(200);
+	});
+  });

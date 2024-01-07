@@ -378,15 +378,23 @@ button:focus {
   padding: 20px;
   margin: 0 auto;
   position: absolute;
-  top: calc(100px + 20px); /* Adjust 100px according to your header's height + additional spacing */
+  top: calc(100px + 20px); 
   left: 0;
   right: 0;
-  background-color: none; /* Adding a background color for visibility */
+  background-color: none; 
   color: #fff;
   font-size: 23px;
   font-style: italic;
   font-family: 'Josefin Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
+}
+
+.audio {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-250%);
+  margin-bottom: -3px;
 }
 
 
