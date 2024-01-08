@@ -5,61 +5,8 @@
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
+    font-weight: 600;
 }
-
-/* Styles for the header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; 
-    color: white;
-    padding: 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.navlist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navlist li {
-    margin-right: 20px;
-}
-
-.navlist a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.navlist a:hover {
-    color: #ddd;
-}
-
-#menu-icon{
-    color: white;
-    font-size: 45px;
-    z-index: 10;
-    cursor: pointer;
-    display: none;
-  
-  }
 
 .about-1 {
     margin: 30px;
