@@ -1,5 +1,3 @@
-
-
 const { gsap, imagesLoaded } = window;
 
 const buttons = {
@@ -109,9 +107,6 @@ function changeInfo(direction) {
         }
     }
 }
-
-// The rest of the code remains unchanged.
-
 
 function updateCard(e) {
 	const card = e.currentTarget;
@@ -238,3 +233,8 @@ $(document).ready(function() {
 	  $(this).fadeIn(200);
 	});
   });
+
+  
+  
+  
+  
