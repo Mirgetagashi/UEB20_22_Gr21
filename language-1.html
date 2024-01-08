@@ -1,128 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Language of Flowers</title>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css'>
-	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
-	<link rel="stylesheet" href="style-language-1.css">
-	
-
-
-
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style-language-1.css">
 </head>
 
 <body>
-	<header class="header">
-		<a href="#" class="logo"> Bloomon Site</a>
-		<ul class="navlist">
-		   <li><a href="#"> Home</a></li>
-		   <li><a href="#"> Gifts</a></li>
-		   <li><a href="care.html"> Care</a></li>
-		   <li><a href="#"> About</a></li>
-		   <li><a href="#"> Contact </a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon">
-	 
+  <!-- Bootstrap Header -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(189, 203, 226);">
+    <a class="navbar-brand text-white" href="#" style="font-family: 'Cinzel Decorative', cursive;">Bloomon Site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gifts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="care.html">Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="app">
+	<div>
+		<div class="Title">
+		  <p>Language Of Flowers a.k.a Floriography is the study of flowers and their meanings. It can guide us when we send a floral tribute that not only looks good but also has a special, deep, and meaningful message for the recipient.</p>
 		</div>
-	 </header>
-	 <div class="container">
-	 <div class="Title"><p>Language Of Flowers a.k.a Floriography is the 
-		study of flowers and their meanings. 
-		It can guide us when we send a floral tribute 
-		that not only looks good, but one has a special, 
-		deep, and meaningful message for the recipient.</p></div>
-	</div>
+	  </div>
 	
-	
-<div class="app">
-
-	
-
-	<div class="cardList">
-		<button class="cardList__btn btn btn--left">
-			<div class="icon">
-				<svg>
-					<use xlink:href="#arrow-left"></use>
-				</svg>
-			</div>
-		</button>
-
-		<div class="cards__wrapper">
-			<div class="card current--card">
-				<div class="card__image">
-					<img src="assets/hydrangea.jpg" alt="Hydrangea" />
-				</div>
-			</div>
-
-			<div class="card next--card">
-				<div class="card__image">
-					<img src="assets/rebecca.jpg" alt="Rebecca" />
-				</div>
-			</div>
-
-			<div class="card previous--card">
-				<div class="card__image">
-					<img src="assets/karolina.jpg" alt="Karolina" />
-				</div>
-			</div>
-		</div>
-
-		<button class="cardList__btn btn btn--right">
-			<div class="icon">
-				<svg>
-					<use xlink:href="#arrow-right"></use>
-				</svg>
-			</div>
-		</button>
-	</div>
-
-	<div class="infoList">
-		<div class="info__wrapper">
-			<div class="info current--info">
-				<h1 class="text name">Hydrangea</h1>
-				<p class="text description">Gratitude and Thanks</p>
-			</div>
-
-			<div class="info next--info">
-				<h1 class="text name">Rebecca</h1>
-				<p class="text description">Harmony and Admiration</p>
-			</div>
-
-			<div class="info previous--info">
-				<h1 class="text name">Karolina</h1>
-				<p class="text description">Peace and Tranquility</p>
-			</div>
-		</div>
-	</div>
-	<div class="audio"><audio controls>
-		<source src="audios/PlantSounds.mp3" type="audio/mpeg">
-		
-	  </audio></div>
-
-
-
-
-
-<svg class="icons" style="display: none;">
-	<symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-		<polyline points='328 112 184 256 328 400'
-					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-	</symbol>
-	<symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
-		<polyline points='184 112 328 256 184 400'
-					 style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
-	</symbol>
-</svg>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
-<script  src="script-language-1.js"></script>
-
+    <div class="cardList">
+      <button class="cardList__btn btn btn--left">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#arrow-left"></use>
+          </svg>
+        </div>
+      </button>
+      <div class="cards__wrapper">
+        <div class="card current--card">
+          <div class="card__image">
+            <img src="assets/hydrangea.jpg" alt="Hydrangea" />
+          </div>
+        </div>
+        <div class="card next--card">
+          <div class="card__image">
+            <img src="assets/rebecca.jpg" alt="Rebecca" />
+          </div>
+        </div>
+        <div class="card previous--card">
+          <div class="card__image">
+            <img src="assets/karolina.jpg" alt="Karolina" />
+          </div>
+        </div>
+      </div>
+      <button class="cardList__btn btn btn--right">
+        <div class="icon">
+          <svg>
+            <use xlink:href="#arrow-right"></use>
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div class="infoList">
+      <div class="info__wrapper">
+        <div class="info current--info">
+          <h1 class="text name">Hydrangea</h1>
+          <p class="text description">Gratitude and Thanks</p>
+        </div>
+        <div class="info next--info">
+          <h1 class="text name">Rebecca</h1>
+          <p class="text description">Harmony and Admiration</p>
+        </div>
+        <div class="info previous--info">
+          <h1 class="text name">Karolina</h1>
+          <p class="text description">Peace and Tranquility</p>
+        </div>
+      </div>
+    </div>
+    <div class="audio m-2">
+      <audio controls>
+        <source src="audios/PlantSounds.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <svg class="icons" style="display: none;">
+      <symbol id="arrow-left" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='328 112 184 256 328 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+      <symbol id="arrow-right" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'>
+        <polyline points='184 112 328 256 184 400' style='fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:48px' />
+      </symbol>
+    </svg>
+    <!-- Bootstrap and other scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src='https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js'></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script-language-1.js"></script>
+  </div>
 </body>
+
 </html>
-
-
-
-
-

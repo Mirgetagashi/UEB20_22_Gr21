@@ -110,9 +110,6 @@ function changeInfo(direction) {
     }
 }
 
-// The rest of the code remains unchanged.
-
-
 function updateCard(e) {
 	const card = e.currentTarget;
 	const box = card.getBoundingClientRect();
@@ -238,3 +235,8 @@ $(document).ready(function() {
 	  $(this).fadeIn(200);
 	});
   });
+
+  
+  
+  
+  
