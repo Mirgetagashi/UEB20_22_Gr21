@@ -1,22 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
-/* @import "compass/css3"; */
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap");
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   list-style: none;
   text-decoration: none;
-
 }
 
-a{
+a {
   color: white;
   margin-left: 60px;
   font-size: 17px;
-  font-weight: 600 ;
-
+  font-weight: 600;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap");
@@ -43,7 +40,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 75px;
 }
 
 .cardList {
@@ -86,11 +82,14 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset)) translateY(var(--card-translateY-offset)) rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
+  transform: translate(-50%, -50%) translateX(var(--card-translateX-offset))
+    translateY(var(--card-translateY-offset))
+    rotateY(var(--card-rotation-offset)) scale(var(--card-scale-offset));
   display: inline-block;
   width: var(--card-width);
   height: var(--card-height);
-  transition: transform var(--card-transition-duration) var(--card-transition-easing);
+  transition: transform var(--card-transition-duration)
+    var(--card-transition-easing);
   user-select: none;
 }
 .card::before {
@@ -102,7 +101,8 @@ body {
   height: 100%;
   background: #000;
   z-index: 1;
-  transition: opacity var(--card-transition-duration) var(--card-transition-easing);
+  transition: opacity var(--card-transition-duration)
+    var(--card-transition-easing);
   opacity: calc(1 - var(--opacity));
 }
 .card__image {
@@ -133,7 +133,8 @@ body {
   --card-translateX-offset: calc(var(--card-width) * 1.1);
   --card-rotation-offset: -25deg;
 }
-.card.previous--card, .card.next--card {
+.card.previous--card,
+.card.next--card {
   --card-scale-offset: 0.9;
   --opacity: 0.4;
 }
@@ -159,7 +160,8 @@ body {
   margin-bottom: calc(var(--card-height) / 8);
   margin-left: calc(var(--card-width) / 1.5);
   transform: translateZ(2rem);
-  transition: transform var(--card-transition-duration) var(--card-transition-easing);
+  transition: transform var(--card-transition-duration)
+    var(--card-transition-easing);
 }
 .info .text {
   position: relative;
@@ -177,9 +179,45 @@ body {
   opacity: 1;
   display: block;
 }
-.info.previous--info, .info.next--info {
+.info.previous--info,
+.info.next--info {
   opacity: 0;
   display: none;
+}
+
+.loading__wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #000;
+  z-index: 200;
+}
+.loading__wrapper .loader--text {
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 1.4rem;
+}
+.loading__wrapper .loader {
+  position: relative;
+  width: 200px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.25);
+}
+.loading__wrapper .loader span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  transform: scaleX(0);
+  transform-origin: left;
 }
 
 @media only screen and (min-width: 800px) {
@@ -213,17 +251,17 @@ body {
   padding: 20px;
   margin: 0 auto;
   position: absolute;
-  top: calc(100px + 20px); 
+  top: calc(
+    100px + 20px
+  ); 
   left: 0;
   right: 0;
   margin: 20 px auto;
   color: #fff;
   font-size: 23px; 
   font-style: italic;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 700; 
-
-
 }
 
 .audio {
@@ -232,10 +270,18 @@ body {
   left: 0;
 }
 
+@media (min-width: 992px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .Title {
+    margin-top: -100px; 
+  }
 
-
-
-
-
-
+  .cardList {
+    margin-top: 50px; 
+  }
+}
