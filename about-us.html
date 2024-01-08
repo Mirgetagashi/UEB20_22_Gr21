@@ -3,31 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About Us</title>
     <link rel="stylesheet" href="about-us.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet'>
+      <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     
 </head>
 <body style="background-color: #BDCBE2;">
-    <header class="header">
-		<a href="#" class="logo"> Bloomon Site</a>
-		<ul class="navlist">
-		   <li><a href="#"> Home</a></li>
-		   <li><a href="#"> Gifts</a></li>
-		   <li><a href="care.html"> Care</a></li>
-		   <li><a href="#"> About</a></li>
-		   <li><a href="#"> Contact </a></li>
-		</ul>
-		<div class="bx bx-menu" id="menu-icon">
-	 
-		</div>
-	 </header>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent; font-size: 20px;">
+    <a class="navbar-brand text-white" href="#" style="font-family: 'Cinzel Decorative', cursive;">Bloomon Site</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto"> 
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Gifts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="care.html">Care</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
 
     <canvas id="flowerCanvas" width="800" height="600"></canvas>
     <section id="about">
-        <div class = "about-1">
-            <h1 style="color: white;">ABOUT US</h1>
+        <div class = "about-1" style="margin-top: 30px;">
+            <h1 style="color: white; margin-top: 50px; text-align: center;">ABOUT US</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, vel quaerat voluptas in suscipit dolor ipsa, laboriosam maiores quidem tempora, voluptatibus omnis nisi vitae? Aspernatur, nulla. Ab consectetur maxime cum?
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente numquam neque sint modi repudiandae quaerat, suscipit a libero veniam tenetur enim cumque quod ab reiciendis maxime velit delectus, quidem esse.
             </p>
@@ -38,8 +55,7 @@
                             <div class="col-md-4">
                                 <div class="about-item text-center">
                                     <i class="fas fa-globe"></i>
-                                    <h3>VISSION</h3>
-                                    <hr>
+                                    <h3>VISION</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe unde quas rem corrupti, suscipit ea quibusdam laboriosam possimus repellendus consectetur maxime debitis exercitationem consequuntur. Assumenda distinctio eligendi ratione natus.
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ipsa non quae totam veritatis, officiis sapiente obcaecati ratione saepe cupiditate nemo eligendi dolor atque amet quo rem! Officia, impedit incidunt.
                                     </p>
@@ -50,7 +66,6 @@
                                 <div class="about-item text-center">
                                     <i class="fas fa-pencil-alt"></i>
                                     <h3>ACHIEVEMENTS</h3>
-                                    <hr>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe unde quas rem corrupti, suscipit ea quibusdam laboriosam possimus repellendus consectetur maxime debitis exercitationem consequuntur. Assumenda distinctio eligendi ratione natus.
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ipsa non quae totam veritatis, officiis sapiente obcaecati ratione saepe cupiditate nemo eligendi dolor atque amet quo rem! Officia, impedit incidunt.
                                     </p>
@@ -61,7 +76,6 @@
                                 <div class="about-item text-center">
                                     <i class="fas fa-book"></i>
                                     <h3>MISSION</h3>
-                                    <hr>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic saepe unde quas rem corrupti, suscipit ea quibusdam laboriosam possimus repellendus consectetur maxime debitis exercitationem consequuntur. Assumenda distinctio eligendi ratione natus.
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed ipsa non quae totam veritatis, officiis sapiente obcaecati ratione saepe cupiditate nemo eligendi dolor atque amet quo rem! Officia, impedit incidunt.
                                     </p>
@@ -75,9 +89,66 @@
 
         </div>
     </section>
-    <footer>
-        <!--Footeri prej Lumit-->
-    </footer>
+    <footer class="site-footer">
+        <div class="container">
+           <div class="row mb-5">
+              <div class="col-md-3 mb-5">
+                 <h2>About us</h2>
+                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id sit beatae neque, accusamus sunt quidem
+                    quia magnam provident ab repudiandae cumque, nisi optio voluptate voluptatem voluptatum et quae.</p>
+              </div>
+  
+              <div class="col-md-3 mb-5">
+                 <h2>Contact &amp; Address</h2>
+                 <ul class="list-unstyled footer-link">
+                    <li class="d-flex">
+                       <span class="me-3"> Addresses:</span><span class="text-white">
+                          Prishtine, Kosove
+                       </span>
+                    </li>
+                    <li class="d-flex">
+                       <span class="me-3"> Telephone:</span><span class="text-white">
+                          +33 00 45418 054 125
+                       </span>
+                    </li>
+                    <li class="d-flex">
+                       <span class="me-3"> Email:</span><span class="text-white">
+                          youremail@urdomain.com
+                       </span>
+                    </li>
+                 </ul>
+              </div>
+  
+              <div class="col-md-3 mb-5">
+                 <h2>Quick Links</h2>
+                 <ul class="list-unstyled footer-link d-inline">
+                    <li class="demo"><a href="#">About Us</a></li>
+                    <li><a href="#">Blog articles</a></li>
+                    <li><a href="./Shop/shop.html">Our flowers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                 </ul>
+              </div>
+  
+              <div class="col-md-3">
+                 <h2>Our Social Media</h2>
+                 <ul class="list-unstyled footer-link d-flex footer-social">
+                    <li><a href="https://www.facebook.com/"><span class="fab fa-facebook" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/"><span class="fab fa-instagram" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="https://www.youtube.com/"><span class="fab fa-youtube" aria-hidden="true"></span></a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/"><span class="fab fa-linkedin" aria-hidden="true"></span></a>
+                    </li>
+                 </ul>
+              </div>
+           </div>
+        </div>
+     </footer>
     <script src="about-us.js"></script>
+    <!-- Bootstrap and other scripts -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

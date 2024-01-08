@@ -5,71 +5,7 @@
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     text-decoration: none;
-}
-
-about-1 h1 {
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    margin-top: 100px; /* Adjust this value as needed for the desired positioning */
-}
-
-/* Styles for the header */
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: transparent; /* Change this to your preferred header background color */
-    color: white;
-    padding: 20px;
-    z-index: 1000;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
-    font-family: 'Cinzel Decorative', cursive;
-}
-
-.navlist {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.navlist li {
-    margin-right: 20px;
-}
-
-.navlist a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.navlist a:hover {
-    color: #ddd;
-}
-
-  #menu-icon{
-    color: white;
-    font-size: 45px;
-    z-index: 10;
-    cursor: pointer;
-    display: none;
-  
-  }
-
-body {
-    background-color: #BDCBE2;
+    font-weight: 600;
 }
 
 .about-1 {
@@ -77,11 +13,9 @@ body {
     padding: 5px;
 }
 
-
-
 .about-1 p {
     text-align: center;
-    padding: 30px; /* Fixed typo */
+    padding: 30px;
     color: white;
 }
 
@@ -89,13 +23,13 @@ body {
     margin-bottom: 20px;
     margin-top: 20px;
     background-color: white;
-    padding: 80px 30px; /* Fixed padding values */
-    box-shadow: 0 0 9px rgba(0, 0, 0.6);
+    padding: 80px 30px;
     border-radius: 15px;
 }
 
 .about-item i {
     font-size: 43px;
+    padding-bottom: 15px;
   
 }
 
@@ -104,14 +38,6 @@ body {
     margin-bottom: 10px;
 }
 
-.about-item hr {
-    width: 46px;
-    height: 3px;
-    background-color: #BDCBE2;
-    margin: 0 auto;
-    border: none;
-}
-
 .about-item p {
     margin-top: 20px;
     color: black;
@@ -119,194 +45,19 @@ body {
 
 .about-item:hover {
     background-color: #BDCBE2;
-}
-
-.about-item:hover i,
-.about-item:hover h3,
-.about-item:hover p {
-    color: #fff;
-    transform: scale(1.1); /* Added proper transformation */
-}
-
-.about-item:hover hr {
-    background-color: #fff;
-}
-
-.about-item:hover i {
-    transform: translateY(-20px);
-    transition: all 400ms ease-in-out; /* Added transition property */
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Montserrat, sans-serif;
-}
-
-body {
-    background-color: #BDCBE2;
-}
-
-.about-1 {
-    margin: 30px;
-    padding: 5px;
-}
-
-.about-1 h1 {
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-
-.about-1 p {
-    text-align: center;
-    padding: 30px; /* Fixed typo */
-    color: #fff;
-}
-
-.about-item {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: white;
-    padding: 80px 30px; /* Fixed padding values */
     box-shadow: 0 0 9px rgba(0, 0, 0.6);
-    border-radius: 15px;
 }
 
-.about-item i {
-    font-size: 43px;
-    margin: 0;
-}
-
-.about-item h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.about-item hr {
-    width: 46px;
-    height: 3px;
-    background-color: #BDCBE2;
-    margin: 0 auto;
-    border: none;
-}
-
-.about-item p {
-    margin-top: 20px;
-    color: black;
-}
-
-.about-item:hover {
-    background-color: #BDCBE2;
+.about-item:hover i {
+    transform: translateY(-20px);
+    transition: all 400ms ease-in-out; 
 }
 
 .about-item:hover i,
 .about-item:hover h3,
 .about-item:hover p {
     color: #fff;
-    transform: scale(1.1); /* Added proper transformation */
 }
-
-.about-item:hover hr {
-    background-color: #fff;
-}
-
-.about-item:hover i {
-    transform: translateY(-20px);
-    transition: all 400ms ease-in-out; /* Added transition property */
-}
-
-#background-canvas {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1; /* Ensures it's behind other elements */
-    width: 100vw;
-    height: 100vh;
-}
-
-
-
-
-* {
-    padding: 0;
-    margin: 0;
-    font-family: Montserrat, sans-serif;
-}
-
-body {
-    background-color: #BDCBE2;
-}
-
-.about-1 {
-    margin: 30px;
-    padding: 5px;
-}
-
-.about-1 h1 {
-    text-align: center;
-    color: black;
-    font-weight: bold;
-}
-
-.about-1 p {
-    text-align: center;
-    padding: 30px; /* Fixed typo */
-    color: #fff;
-}
-
-.about-item {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background-color: white;
-    padding: 80px 30px; /* Fixed padding values */
-    box-shadow: 0 0 9px rgba(0, 0, 0.6);
-    border-radius: 15px;
-}
-
-.about-item i {
-    font-size: 43px;
-    margin: 0;
-}
-
-.about-item h3 {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.about-item hr {
-    width: 46px;
-    height: 3px;
-    background-color: #BDCBE2;
-    margin: 0 auto;
-    border: none;
-}
-
-.about-item p {
-    margin-top: 20px;
-    color: black;
-}
-
-.about-item:hover {
-    background-color: #BDCBE2;
-}
-
-.about-item:hover i,
-.about-item:hover h3,
-.about-item:hover p {
-    color: #fff;
-    transform: scale(1.1); /* Added proper transformation */
-}
-
-.about-item:hover hr {
-    background-color: #fff;
-}
-
-.about-item:hover i {
-    transform: translateY(-20px);
-    transition: all 400ms ease-in-out; /* Added transition property */
-}
-
 
 #background-canvas {
     position: fixed;
@@ -319,7 +70,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -2; /* To further push the flower canvas behind the background canvas */
+    z-index: -2; 
 }
 
 
@@ -327,3 +78,54 @@ body {
 
 
 
+.section-subscribe{
+    padding: 3rem 0;
+ }
+ .site-footer{
+    padding: 5rem 0;
+    background: #BED0EB;
+    font-size: 14px;
+    color: grey;
+ }
+ .site-footer p:last-child{
+    margin-bottom: 0;
+ }
+ .site-footer a{
+    text-decoration: none;
+    color: grey;
+    border-bottom: 1px solid transparent;
+ }
+ .site-footer a:hover{
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+ }
+ .site-footer h2{
+    font-size: 22px;
+    margin-bottom: 28px;
+    letter-spacing: .05rem;
+ 
+ }
+ .site-footer, .footer-link li{
+    line-height: 1.5;
+    margin-bottom: 10px;
+ }
+ .footer-social a{
+    margin-left: 0px !important;
+    line-height: 0;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+ 
+ }
+ .footer-social a:hover {
+    background: #fff;
+    border-color: #fff;
+    color:#000;
+ }
+ footer-social .fa{
+       margin-top: 12px;
+ }
