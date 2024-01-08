@@ -538,14 +538,15 @@ h3{
    color:#000;
 }
 footer-social .fa{
-      margin-top: 7px;
+      margin-top: 12px;
 }
-/* Add this style to change the color on hover */
+
+/* Smooth transitions to readmore buttons */
 .btn {
-      transition: color 0.3s, box-shadow 0.3s; /* Add transition for a smooth effect */
+      transition: color 0.3s, box-shadow 0.3s;
    }
 
 .btn:hover {
       color: #AFC1E0; 
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.5); /* Add black box shadow on hover */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.5); 
    }
