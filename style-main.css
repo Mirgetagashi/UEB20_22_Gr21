@@ -419,6 +419,7 @@ h3{
    text-decoration: none;
    align-self: flex-start;
    cursor: pointer;
+   border-radius: 60px;
  }
 
 
