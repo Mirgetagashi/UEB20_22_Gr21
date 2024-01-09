@@ -116,9 +116,18 @@
                             <h3>Create account</h3>
                             
                             <div class="input-field">
-                                <input type="text" class="input" id="username" required pattern=".{3,25}">
+                                <input type="text" class="input" id="username" list="usernameList" required pattern=".{3,25}">
                                 <label for="username">Username</label>
-                            </div>
+                                <datalist id="usernameList">
+                                  <option value="Fjolla">
+                                  <option value="Mirgeta">
+                                  <option value="Linda">
+                                  <option value="Lum"></option>
+                                  <option value="Leonita"></option>
+                                  <!-- Add more suggested usernames as needed -->
+                                </datalist>
+                              </div>
+                              
                             <div id="username-error" class="error-message"></div>
                             
                             <div class="input-field">
