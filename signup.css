@@ -1,4 +1,58 @@
-
+html{
+    scroll-behavior: smooth;
+ }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+    list-style: none;
+    text-decoration: none !important;
+ 
+ }
+ header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 3%;
+    background: transparent;
+ 
+ }
+ 
+ .logo{
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+ 
+ }
+ .navlistt{
+    display: flex;
+ }
+ .navlistt,.menu a{
+     color: white;
+     margin-left: 60px;
+     font-size: 17px;
+     font-weight: 600 ;
+     border-bottom: 2px solid transparent;
+     transition: all .55s ease;
+ }
+ .navlistt a:hover{
+    border-bottom: 2px solid white;
+ }
+ #menu-icon{
+    color: white;
+    font-size: 45px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+ 
+ }
 
 *{
     font-family:'Montserrat', sans-serif;
@@ -64,10 +118,12 @@ i{
     width: 330px;
     box-sizing: border-box;
 }
-.input-box header{
+.input-box h1{
     font-weight: 700;
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 20%;
+    
+
 }
 .input-field {
     display: flex;
