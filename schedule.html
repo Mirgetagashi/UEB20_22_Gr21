@@ -1,12 +1,76 @@
-<!DOCTYPE html>
+   <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Flower Training Schedule</title>
+
+<!-- Google Fonts --->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
+   rel="stylesheet">
+
+
     <style>
+        
+        html{
+    scroll-behavior: smooth;
+ }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+    list-style: none;
+    text-decoration: none !important;
+ 
+ }
+ header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 3%;
+    background: transparent;
+ 
+ }
+ 
+ .logo{
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+ 
+ }
+ .navlistt{
+    display: flex;
+ }
+ .navlistt,.menu a{
+     color: white;
+     margin-left: 60px;
+     font-size: 17px;
+     font-weight: 600 ;
+     border-bottom: 2px solid transparent;
+     transition: all .55s ease;
+ }
+ .navlistt a:hover{
+    border-bottom: 2px solid white;
+ }
+ #menu-icon{
+    color: white;
+    font-size: 45px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+ 
+ }
+
         body {
-            background-color: #f8f9fa;
+            background-color: rgb(182, 199, 224);
             font-family:'Montserrat', sans-serif;
             margin: 0;
             display: flex;
@@ -54,6 +118,18 @@
     </style>
 </head>
 <body>
+    <header class="header">
+        <a href="./index.html" class="logo"> Bloomon Site</a>
+        <ul class="navlistt">
+           <li class="menu"><a href="./index.html">Home</a></li>
+           <li class="menu"><a href="Shop/shop.html">Shop</a></li>
+           <li class="menu"><a href="care.html">Care</a></li>
+           <li class="menu"><a href="#">About</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+    
+        </div>
+     </header>
 
 <div class="container">
     <h2>Flower Training Schedule</h2>
@@ -113,3 +189,4 @@
 
 </body>
 </html>
+
