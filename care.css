@@ -24,13 +24,13 @@ header {
     background: transparent;
 }
 
-.logo{
+.logo {
     font-size: 42px;
     font-weight: 900;
     color: white;
     font-family: 'Cinzel Decorative', cursive;
- 
- }
+
+}
 
 .navlistt {
     display: flex;
@@ -69,6 +69,31 @@ header {
 .flowers-info {
     padding: 2px;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .img-style {
+        width: 100%;
+        height: auto;
+    }
+
+    .roses-container,
+    .tulips-container,
+    .daisy-container,
+    .lilies-container,
+    .orchid-container {
+        flex-direction: column;
+    }
+
+    .roses-img,
+    .tulips-img,
+    .daisy-img,
+    .lilies-img,
+    .orchid-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
 }
 
 .img-style {
@@ -303,12 +328,15 @@ header {
     transform: perspective(600px) rotateY(180deg);
     z-index: index 2;
 }
+
 .video-tips {
     display: flex;
     justify-content: center;
-   /* align-items: center;*/
-    height: 450px; /* Adjust as needed */
-    background-attachment: fixed; /* Set background color as needed */
+    /* align-items: center;*/
+    height: 450px;
+    /* Adjust as needed */
+    background-attachment: fixed;
+    /* Set background color as needed */
     align-content: flex-start;
 }
 
@@ -317,5 +345,67 @@ header {
     height: 107%;
     border-radius: 45px;
     box-shadow: 16 5px 10px;
-    
+}
+
+.section-subscribe {
+    padding: 3rem 0;
+}
+
+.site-footer {
+    padding: 5rem 0;
+    background: #BED0EB;
+    font-size: 14px;
+    color: grey;
+}
+
+.site-footer p:last-child {
+    margin-bottom: 0;
+}
+
+.site-footer a {
+    text-decoration: none;
+    color: grey;
+    border-bottom: 1px solid transparent;
+}
+
+.site-footer a:hover {
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.site-footer h2 {
+    font-size: 22px;
+    margin-bottom: 28px;
+    letter-spacing: .05rem;
+
+}
+
+.footer-social .fa {
+    margin-top: 12px;
+}
+
+
+.site-footer,
+.footer-link li {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    margin-left: 0px !important;
+    line-height: 0;
+    border-radius: 50%;
+    margin: 0 0 0 0;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    display: inline-block;
+
+}
+
+.footer-social a:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #000;
 }
