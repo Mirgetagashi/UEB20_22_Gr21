@@ -1,5 +1,63 @@
+html{
+    scroll-behavior: smooth;
+ }
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif ;
+    list-style: none;
+    text-decoration: none !important;
+ 
+ }
+ header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 3%;
+    background: transparent;
+ 
+ }
+ 
+ .logo{
+    font-size: 42px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Cinzel Decorative', cursive;
+ 
+ }
+ .navlistt{
+    display: flex;
+ }
+ .navlistt,.menu a{
+     color: white;
+     margin-left: 60px;
+     font-size: 17px;
+     font-weight: 600 ;
+     border-bottom: 2px solid transparent;
+     transition: all .55s ease;
+ }
+ .navlistt a:hover{
+    border-bottom: 2px solid white;
+ }
+ #menu-icon{
+    color: white;
+    font-size: 45px;
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+ 
+ }
 
-.header{
+body{
+    background-color:rgb(182, 199, 224) ;
+}
+.headerr{
     background-image: url(foto1.jpg);
     background-size: cover;
     text-align: center;
@@ -11,7 +69,7 @@
 
 }
 
-.header >h1{
+.headerr >h1{
     font-size: 3rem;
     margin: .3em 0 .6em 0;
     text-transform: uppercase;
@@ -33,6 +91,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-top: 5%;
 }
 
 .text1 h3{
@@ -96,23 +155,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 5%;
 }
 
 .butoni button{
-background-color: white;
-color: #964B00;
-padding: 10px 30px;
-font-size: 1rem;
-border: 2px solid #964B00 ;
-border-radius: 7px;
-cursor: pointer;
-transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    color: white;
+    background: rgb(178, 188, 203);
+    border: 1px solid transparent;
+    padding: 15px 40px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 45px;
+    text-transform: uppercase;
+    transition: all .55 ease;
+    border: 1px solid white;
 
 }
 
 .butoni button:hover {
-    background-color: #964B00; 
-    color: white; 
+    background: transparent;
+   border: 1px solid white;
+   transform: translateX(9px);
 }
 .video{
     display: flex;
@@ -234,7 +299,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
 .video-container {
     position: relative;
     overflow: hidden;
-    
+
     padding-bottom: 56.25%;
 }
 
@@ -245,6 +310,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
     margin-left: 300px;
     width: 60%;
     height: 100%;
+    margin-top: 5%;
     
 }
 
@@ -252,6 +318,7 @@ transition: background-color 0.3s ease, color 0.3s ease;
 .video2 iframe {
     width: 100%;    
     height: 100%;
+    margin-top: 5%;
     
 }
 
