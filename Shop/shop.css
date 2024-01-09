@@ -4,27 +4,35 @@ html{
  }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+/*hederi*/
+
 header{
+
     position: fixed;
-    right: 0;
     top: 0;
-    z-index: 1000;
-    width: 100%;
+    left: 0;
+    right: 0;
+    z-index: 6000;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 33px 3%;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 50px;
+    padding-left: 50px;
+    transition: 250ms ease-in;
     background: transparent;
  
  }
  
  .logo{
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 42px;
+    font-weight: 900;
     color: white;
     font-family: 'Cinzel Decorative', cursive;
-  
-  }
+ 
+ }
  .navlistt{
     display: flex;
  }
@@ -48,6 +56,11 @@ header{
  
  }
 
+
+
+
+
+/*hederi*/
 * {
     margin: 0;
     padding: 0;
@@ -75,6 +88,8 @@ body {
     margin-right: 0;
     margin-left: 150px;
     display: flex;
+    position: fixed;
+    
 }
 
 .container {
@@ -320,6 +335,24 @@ dl dd.inline {
         opacity: 1;
     }
 }
+
+
+@media (min-width: 992px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Title {
+    margin-top: -100px; 
+  }
+
+  .cardList {
+    margin-top: 50px; 
+  }
+}
+
 
 
 
