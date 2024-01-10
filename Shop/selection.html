@@ -91,10 +91,17 @@
 
 /* Add this to your existing styles */
 .flower-list {
+    margin-top: 19%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+}
+.form-inline{
+    background-color: rgb(182, 199, 224) !important;
+    margin-top: 5%;
+    align-items: center;
+    position: relative;
 }
 
 .flower-card {
@@ -108,10 +115,14 @@
         width: calc(50% - 20px); /* Two cards in a row on smaller screens */
     }
 }
-
-
-
-
+@media (max-width: 1000px) {
+    .form-inline {
+        margin-top: 13%;
+    }
+    .card{
+        margin-top: 30%;
+    }
+}
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -159,12 +170,12 @@ body {
     background-repeat: repeat-y;
 }
 
-        
+     
 
 header {
-            color: rgb(182, 199, 224);
-            padding: 15px;
-            text-align: center;
+         color: rgb(182, 199, 224);
+        Padding: 15px;
+        text-align: center;
         }
 
         select,
@@ -192,13 +203,121 @@ header {
         .flower-card {
             margin: 10px;
         }
+        html{
+   scroll-behavior: smooth;
+}
+  /* Menu-BAR */ 
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif ;
+   list-style: none;
+   text-decoration: none !important;
 
+}
+header{
+   position: fixed;
+   right: 0;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 33px 3%;
+   background: transparent;
+
+}
+
+
+.logo{
+   font-size: 42px;
+   font-weight: 900;
+   color: white;
+   font-family: 'Cinzel Decorative', cursive;
+
+}
+.navlistt{
+   display: flex;
+}
+.navlistt,.menu a{
+    color: white;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 600 ;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlistt a:hover{
+   border-bottom: 2px solid white;
+}
+#menu-icon{
+   color: white;
+   font-size: 45px;
+   z-index: 10;
+   cursor: pointer;
+   display: none;
+
+}
+.scroll-down i:hover{
+   transform: translateY(20px);
+} 
+@media (max-width:1540px){
+   header{
+      padding: 15px 3%;
+      transition: .2s;
+   }
+   .icon{
+      padding: 0 3%;
+      transition: .2s;
+   }
+   .scroll-down{
+      right: 3%;
+      transform: .2s;
+
+   }
+   
+}
+
+
+@media (max-width:1195px){
+  
+   .icon{
+      display: none;
+      top: 5%;
+
+   }
+   .scroll-down{
+      display: none;
+   }
+}
+@media (max-width:990px){
+#menu-icon{
+   display: block;
+}
+}
 
     </style>
+
+
 
 </head>
 
 <body>
+    <header class="header">
+        <a href="./index.html" class="logo"> Bloomon Site</a>
+        <ul class="navlistt">
+           <li class="menu"><a href="Shop/shop.html">Shop</a></li>
+           <li class="menu"><a href="care.html">Care</a></li>
+           <li class="menu"><a href="workshop.html">Workshop</a></li>
+           <li class="menu"><a href="language-1.html">Flower language</a></li>
+           <li class="menu"><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+  
+        </div>
+     </header>
    
    
     <header>
