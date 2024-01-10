@@ -14,3 +14,7 @@ const sr = ScrollReveal({
 sr.reveal('.hero-text',{delay:200, origin:'top'});
 sr.reveal('.hero-img',{delay:450, origin:'top'});
 
+$(document).ready(function() {
+   // Show and animate the logo on page load
+   $(".logo").slideDown(1000); // Adjust animation duration as needed
+ });

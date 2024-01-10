@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Flower Training Schedule</title>
 
-<<<<<<< Updated upstream
+
 <!-- Google Fonts --->
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap"
@@ -15,9 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500;1,600;1,800&display=swap" rel="stylesheet">
 
-=======
 
->>>>>>> Stashed changes
 
     <style>
         
@@ -132,6 +130,12 @@
         .table-bordered th {
         padding: 10px; 
 }
+#eventDates{
+   position: absolute;
+   left: 17%;
+   margin-top: 40%;
+}
+
 
     </style>
 </head>
@@ -202,8 +206,34 @@
         </table>
     </div>
 </div>
+<div id="eventDates"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Example event objects with dates
+    const events = [
+        { name: 'Event 1', date: new Date('2024-01-15') },
+        { name: 'Event 2', date: new Date('2024-02-20') },
+        { name: 'Event 3', date: new Date('2024-03-25') }
+    ];
+
+    // Function to display event dates
+    function displayEventDates(events) {
+        const eventDatesDiv = document.getElementById('eventDates');
+        let eventDatesHTML = '<h2>Event Dates</h2><ul>';
+
+        events.forEach(event => {
+            eventDatesHTML += `<li>${event.name}: ${event.date.toDateString()}</li>`;
+        });
+
+        eventDatesHTML += '</ul>';
+        eventDatesDiv.innerHTML = eventDatesHTML;
+    }
+
+    // Call the function to display event dates
+    displayEventDates(events);
+</script>
+
 
 </body>
 </html>
