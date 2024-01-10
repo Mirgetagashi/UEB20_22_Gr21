@@ -28,9 +28,9 @@ var gifts = {
         new Product("Gift 4", "50\u20ac", "images/gift4.jpeg", "GIFTS"),
         new Product("Gift 5", "50\u20ac", "images/gifti2.jpeg", "GIFTS"),
         new Product("Gift 6", "50\u20ac", "images/gifti1.jpeg", "GIFTS"),
-        new Product("Gift 7", "10\u20ac", "images/knotpillow.jpeg", "CGIFTS"),
-        new Product("Gift 8", "10\u20ac", "images/giftfinal.jpeg", "GIFTS"),
-        new Product("Gift 9", "\u20ac", "images/giftfinal1.jpeg", "GIFTS")
+        new Product("Gift 7", "10\u20ac", "images/knotpillow.jpeg", "GIFTS"),
+        new Product("Gift 8", "30\u20ac", "images/giftfinal.jpeg", "GIFTS"),
+        new Product("Gift 9", "40\u20ac", "images/giftfinal1.jpeg", "GIFTS")
     ]
 }
 

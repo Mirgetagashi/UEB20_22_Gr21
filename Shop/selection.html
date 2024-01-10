@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flower Website</title>
+    <title>Flower types</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -66,8 +66,6 @@
 
             renderFlowers(filteredFlowers);
 
-            // Map: Display the total number of flowers
-
             // Reduce: Concatenate flower names into a single string
             const flowerNames = flowers.reduce((accumulator, flower) => accumulator + flower.name + ', ', '');
         }
@@ -81,13 +79,11 @@
     </script>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: url(images/sc.png);
-            background-repeat: repeat-y;
-}
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
+
+   
 
 /* Add this to your existing styles */
 .flower-list {
@@ -98,7 +94,8 @@
     padding: 20px;
 }
 .form-inline{
-    background-color: rgb(182, 199, 224) !important;
+    background-color: rgb(182, 199, 224);
+    background: url(images/sky.jpg);
     margin-top: 5%;
     align-items: center;
     position: relative;
@@ -168,11 +165,12 @@ body {
     padding: 0;
     background: url(images/sc.png);
     background-repeat: repeat-y;
+    font-family: 'Montserrat', sans-serif ;
 }
 
      
 
-header {
+.butonat {
          color: rgb(182, 199, 224);
         Padding: 15px;
         text-align: center;
@@ -213,10 +211,10 @@ header {
    box-sizing: border-box;
    font-family: 'Montserrat', sans-serif ;
    list-style: none;
-   text-decoration: none !important;
+   text-decoration: none ;
 
 }
-header{
+header {
    position: fixed;
    right: 0;
    top: 0;
@@ -255,7 +253,7 @@ header{
 #menu-icon{
    color: white;
    font-size: 45px;
-   z-index: 10;
+   z-index: 1000;
    cursor: pointer;
    display: none;
 
@@ -306,13 +304,13 @@ header{
 
 <body>
     <header class="header">
-        <a href="./index.html" class="logo"> Bloomon Site</a>
+        <a href="../index.html" class="logo"> Bloomon Site</a>
         <ul class="navlistt">
-           <li class="menu"><a href="Shop/shop.html">Shop</a></li>
-           <li class="menu"><a href="care.html">Care</a></li>
-           <li class="menu"><a href="workshop.html">Workshop</a></li>
-           <li class="menu"><a href="language-1.html">Flower language</a></li>
-           <li class="menu"><a href="signup.html">Sign Up</a></li>
+           <li class="menu"><a href="shop.html">Shop</a></li>
+           <li class="menu"><a href="../care.html">Care</a></li>
+           <li class="menu"><a href="../workshop.html">Workshop</a></li>
+           <li class="menu"><a href="../language-1.html">Flower language</a></li>
+           <li class="menu"><a href="../signup.html">Sign Up</a></li>
         </ul>
         <div class="bx bx-menu" id="menu-icon">
   
@@ -320,7 +318,7 @@ header{
      </header>
    
    
-    <header>
+    <header class="butonat">
         <div class="form-inline">
             <label for="colorFilter" class="mr-2" style="color: rgb(54, 79, 179);" >Filter by Color:</label>
             <select id="colorFilter" class="form-control mr-2" >
@@ -333,7 +331,8 @@ header{
                 <option value="blue">Blue</option>
             </select>
             <button onclick="filterFlowers()" class="btn btn-primary">Apply Filter</button>
-            <button onclick="showTotalFlowers()" class="btn btn-primary mt-3">Show The Total Numbers Flowers</button>
+            <button onclick="showTotalFlowers()" class="btn btn-primary mt-3" >Total Number Of Flowers:</button>
+
         </div>
     </header>
 
