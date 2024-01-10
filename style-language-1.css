@@ -287,14 +287,17 @@ body {
   }
 }
 
-
 #draggable {
   
   text-align: center;
   padding: 10px;
   cursor: move;
   position: absolute;
-  top: 50px; /* Initial position */
-  left: 50px; /* Initial position */
+  top: 50px; 
+  left: 50px; 
   z-index: 80000;
 }
+
+
+
+

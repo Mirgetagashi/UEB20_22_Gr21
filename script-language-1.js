@@ -252,7 +252,7 @@ $(document).ready(function() {
   });
 
   function makeDraggable(element) {
-	let initialPosition = { x: 50, y: 50 }; // Initial position
+	let initialPosition = { x: 50, y: 50 }; 
 	let offsetX, offsetY;
 
 	element.addEventListener('dragstart', (event) => {

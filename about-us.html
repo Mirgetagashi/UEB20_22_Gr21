@@ -164,17 +164,14 @@
     
 <script>
   document.getElementById('submitBtn').addEventListener('click', function(event) {
-    event.preventDefault(); // Prevent the default form submission
+    event.preventDefault(); 
 
     var audio = document.getElementById('audio');
     if (audio) {
-      audio.currentTime = 0; // Reset the audio to the beginning
-      audio.play(); // Play the audio immediately when the button is clicked
-
-      // Optionally, add a delay or any other action after the audio finishes playing
+      audio.currentTime = 0; 
+      audio.play(); 
       audio.onended = function() {
-        // Your additional actions after audio finishes playing
-        document.getElementById('ratingForm').submit(); // Submit the form after audio finishes playing
+        document.getElementById('ratingForm').submit(); 
       };
     }
   });
