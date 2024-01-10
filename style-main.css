@@ -543,11 +543,15 @@ footer-social .fa{
 }
 
 /* Smooth transitions to readmore buttons */
+/* Smooth transitions to readmore buttons and radial background */
 .btn {
+   background: rgb(175,193,224);
+   background: radial-gradient(circle, rgba(175,193,224,1) 0%, rgba(190,200,217,1) 51%, rgba(182,199,224,1) 100%);
       transition: color 0.3s, box-shadow 0.3s;
    }
 
 .btn:hover {
-      color: #AFC1E0; 
+      color: #ffffff; 
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 0 16px rgba(0, 0, 0, 0.5); 
    }
+
