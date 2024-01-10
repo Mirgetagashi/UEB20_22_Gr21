@@ -346,6 +346,7 @@ h3{
 }
 
  main { 
+   background-position: center;
    background: rgb(190, 208, 235);
    font-family: "Montserrat", sans-serif;
    overflow-x: hidden;
