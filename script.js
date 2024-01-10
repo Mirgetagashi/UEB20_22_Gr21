@@ -18,3 +18,8 @@ $(document).ready(function() {
    // Show and animate the logo on page load
    $(".logo").slideDown(1000); // Adjust animation duration as needed
  });
+
+ function playSubmitSound() {
+   var audio = document.getElementById("submitSound");
+   audio.play();
+}
