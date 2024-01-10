@@ -185,48 +185,63 @@ function init() {
 }
 
 const waitForImages = () => {
-	const images = [...document.querySelectorAll("img")];
-	const totalImages = images.length;
-	let loadedImages = 0;
-	const loaderEl = document.querySelector(".loader span");
+    const images = [...document.querySelectorAll("img")];
+    const totalImages = images.length;
+    let loadedImages = 0;
+    const loaderEl = document.querySelector(".loader span");
 
-	gsap.set(cardsContainerEl.children, {
-		"--card-translateY-offset": "100vh",
-	});
-	gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
-		translateY: "40px",
-		opacity: 0,
-	});
-	gsap.set([buttons.prev, buttons.next], {
-		pointerEvents: "none",
-		opacity: "0",
-	});
+    gsap.set(cardsContainerEl.children, {
+        "--card-translateY-offset": "100vh",
+    });
+    gsap.set(cardInfosContainerEl.querySelector(".current--info").querySelectorAll(".text"), {
+        translateY: "40px",
+        opacity: 0,
+    });
+    gsap.set([buttons.prev, buttons.next], {
+        pointerEvents: "none",
+        opacity: "0",
+    });
 
-	images.forEach((image) => {
-		imagesLoaded(image, (instance) => {
-			if (instance.isComplete) {
-				loadedImages++;
-				let loadProgress = loadedImages / totalImages;
+    images.forEach((image) => {
+        try {
+            imagesLoaded(image, (instance) => {
+                if (instance.isComplete) {
+                    loadedImages++;
+                    let loadProgress = loadedImages / totalImages;
 
-				gsap.to(loaderEl, {
-					duration: 1,
-					scaleX: loadProgress,
-					backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%`,
-				});
+                    gsap.to(loaderEl, {
+                        duration: 1,
+                        scaleX: loadProgress,
+                        backgroundColor: `hsl(${loadProgress * 120}, 100%, 50%)`,
+                    });
 
-				if (totalImages == loadedImages) {
-					gsap.timeline()
-						.to(".loading__wrapper", {
-						duration: 0.8,
-						opacity: 0,
-						pointerEvents: "none",
-					})
-						.call(() => init());
-				}
-			}
-		});
-	});
+                    if (totalImages == loadedImages) {
+                        gsap.timeline()
+                            .to(".loading__wrapper", {
+                                duration: 0.8,
+                                opacity: 0,
+                                pointerEvents: "none",
+                            })
+                            .call(() => init());
+                    }
+                }
+            });
+        } catch (error) {
+            console.error("An error occurred while loading images:", error);
+        }
+    });
 };
+
+try {
+    waitForImages();
+    $(document).ready(function() {
+        $(".Title").hide().slideDown(800, function() {
+            $(this).fadeIn(200);
+        });
+    });
+} catch (error) {
+    console.error("An error occurred:", error);
+}
 
 waitForImages();
 
@@ -236,7 +251,44 @@ $(document).ready(function() {
 	});
   });
 
-  
+  function makeDraggable(element) {
+	let initialPosition = { x: 50, y: 50 }; // Initial position
+	let offsetX, offsetY;
+
+	element.addEventListener('dragstart', (event) => {
+		event.dataTransfer.setData('text/plain', 'Dragged Element');
+	});
+
+	element.addEventListener('dragend', (event) => {
+		event.preventDefault();
+		element.style.top = initialPosition.y + 'px';
+		element.style.left = initialPosition.x + 'px';
+	});
+
+	element.addEventListener('mousedown', (event) => {
+		offsetX = event.clientX - element.getBoundingClientRect().left;
+		offsetY = event.clientY - element.getBoundingClientRect().top;
+
+		document.addEventListener('mousemove', onMouseMove);
+		document.addEventListener('mouseup', onMouseUp);
+	});
+
+	function onMouseMove(event) {
+		let x = event.clientX - offsetX;
+		let y = event.clientY - offsetY;
+
+		element.style.top = y + 'px';
+		element.style.left = x + 'px';
+	}
+
+	function onMouseUp() {
+		document.removeEventListener('mousemove', onMouseMove);
+		document.removeEventListener('mouseup', onMouseUp);
+	}
+}
+
+let draggable = document.getElementById('draggable');
+makeDraggable(draggable); 
   
   
   

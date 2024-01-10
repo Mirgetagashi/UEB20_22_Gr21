@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Website</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    
+    <script>
+        const flowers = [
+
+            { name: 'Daisy blue', color: 'blue', photo: 'images/blue4.jpg' },
+            { name: 'Daisy', color: 'white', photo: 'images/white1.jpeg' },
+            { name: 'Anemone', color: 'purple', photo: 'images/purple2.jpg' },
+            { name: 'Tuscan Gold', color: 'yellow', photo: 'images/yellow1.jpg' },
+            { name: 'Fellowship New York Asters', color: 'pink', photo: 'images/pink3.jpg' },
+            { name: 'Zinnia ', color: 'red', photo: 'images/red5.jpg' },
+            { name: 'Gerbera Daisy ', color: 'red', photo: 'images/red4.jpg' },
+            { name: 'Forget-Me-Not', color: 'white', photo: 'images/white4.jpeg' },
+            { name: 'Elizabeth Clematis', color: 'pink', photo: 'images/pink2.jpg' },
+            { name: 'Annual Phlox', color: 'pink', photo: 'images/pink1.jpg' },
+            { name: 'Pomponette English Daisy', color: 'pink', photo: 'images/pink4.jpg' },
+            { name: 'Aster', color: 'purple', photo: 'images/purple3.jpg' },
+            { name: 'Cosmos', color: 'red', photo: 'images/red3.jpg' },
+            { name: 'Morning Glory', color: 'blue', photo: 'images/blue2.jpg' },
+            { name: 'Sunburst', color: 'yellow', photo: 'images/yellow3.jpg' },
+            { name: 'Coreopsis', color: 'yellow', photo: 'images/yellow2.jpg' },
+            { name: 'Canada Anemone', color: 'white', photo: 'images/white2.webp' },
+            { name: 'Allium Ornamental', color: 'purple', photo: 'images/purple1.jpg' },
+            { name: 'Stiff Blue-Eyed Grass', color: 'blue', photo: 'images/blue3.jpg' },
+            { name: 'Browallia', color: 'purple', photo: 'images/purple4.jpg' },
+            { name: 'Allium', color: 'white', photo: 'images/white3.webp' }
+        ];
+
+        function renderFlowers(filteredFlowers) {
+            const flowerListContainer = document.getElementById('flower-list');
+            flowerListContainer.innerHTML = '';
+
+            filteredFlowers.forEach(flower => {
+                const flowerCard = document.createElement('div');
+                flowerCard.classList.add('flower-card', 'col-md-4');
+                flowerCard.innerHTML = `
+                    <div class="card">
+                        <img src="${flower.photo}" alt="${flower.name}" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">${flower.name}</h5>
+                            <p class="card-text">${flower.color}</p>
+                        </div>
+                    </div>`;
+                flowerListContainer.appendChild(flowerCard);
+            });
+        }
+
+        function filterFlowers() {
+            const colorFilter = document.getElementById('colorFilter').value;
+
+            let filteredFlowers;
+            if (colorFilter === 'all') {
+                filteredFlowers = flowers;
+            } else {
+                filteredFlowers = flowers.filter(flower => flower.color === colorFilter);
+            }
+
+            renderFlowers(filteredFlowers);
+
+            // Map: Display the total number of flowers
+
+            // Reduce: Concatenate flower names into a single string
+            const flowerNames = flowers.reduce((accumulator, flower) => accumulator + flower.name + ', ', '');
+        }
+        function showTotalFlowers() {
+            const totalFlowers = flowers.map(flower => flower.name).length;
+            alert(`Total number of flowers: ${totalFlowers}`);
+        }
+
+        // Initial render with all flowers
+        renderFlowers(flowers);
+    </script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url(images/sc.png);
+            background-repeat: repeat-y;
+}
+
+/* Add this to your existing styles */
+.flower-list {
+    margin-top: 19%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.form-inline{
+    background-color: rgb(182, 199, 224) !important;
+    margin-top: 5%;
+    align-items: center;
+    position: relative;
+}
+
+.flower-card {
+    width: calc(33.33% - 20px); /* 20px margin on each side, and three cards in a row */
+    margin: 10px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .flower-card {
+        width: calc(50% - 20px); /* Two cards in a row on smaller screens */
+    }
+}
+@media (max-width: 1000px) {
+    .form-inline {
+        margin-top: 13%;
+    }
+    .card{
+        margin-top: 30%;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.flower-card {
+    margin: 10px;
+    overflow: hidden;
+}
+
+.flower-card .card-body {
+    background-color: #f8f9fa;
+    padding: 15px;
+}
+
+.flower-card h5 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.flower-card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+header {
+    background-color: rgb(182, 199, 224);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(images/sc.png);
+    background-repeat: repeat-y;
+}
+
+     
+
+header {
+         color: rgb(182, 199, 224);
+        Padding: 15px;
+        text-align: center;
+        }
+
+        select,
+        button {
+            padding: 8px;
+            margin: 5px;
+        }
+
+        button {
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .flower-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .flower-card {
+            margin: 10px;
+        }
+        html{
+   scroll-behavior: smooth;
+}
+  /* Menu-BAR */ 
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: 'Montserrat', sans-serif ;
+   list-style: none;
+   text-decoration: none !important;
+
+}
+header{
+   position: fixed;
+   right: 0;
+   top: 0;
+   z-index: 1000;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 33px 3%;
+   background: transparent;
+
+}
+
+
+.logo{
+   font-size: 42px;
+   font-weight: 900;
+   color: white;
+   font-family: 'Cinzel Decorative', cursive;
+
+}
+.navlistt{
+   display: flex;
+}
+.navlistt,.menu a{
+    color: white;
+    margin-left: 60px;
+    font-size: 17px;
+    font-weight: 600 ;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlistt a:hover{
+   border-bottom: 2px solid white;
+}
+#menu-icon{
+   color: white;
+   font-size: 45px;
+   z-index: 10;
+   cursor: pointer;
+   display: none;
+
+}
+.scroll-down i:hover{
+   transform: translateY(20px);
+} 
+@media (max-width:1540px){
+   header{
+      padding: 15px 3%;
+      transition: .2s;
+   }
+   .icon{
+      padding: 0 3%;
+      transition: .2s;
+   }
+   .scroll-down{
+      right: 3%;
+      transform: .2s;
+
+   }
+   
+}
+
+
+@media (max-width:1195px){
+  
+   .icon{
+      display: none;
+      top: 5%;
+
+   }
+   .scroll-down{
+      display: none;
+   }
+}
+@media (max-width:990px){
+#menu-icon{
+   display: block;
+}
+}
+
+    </style>
+
+
+
+</head>
+
+<body>
+    <header class="header">
+        <a href="./index.html" class="logo"> Bloomon Site</a>
+        <ul class="navlistt">
+           <li class="menu"><a href="Shop/shop.html">Shop</a></li>
+           <li class="menu"><a href="care.html">Care</a></li>
+           <li class="menu"><a href="workshop.html">Workshop</a></li>
+           <li class="menu"><a href="language-1.html">Flower language</a></li>
+           <li class="menu"><a href="signup.html">Sign Up</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon">
+  
+        </div>
+     </header>
+   
+   
+    <header>
+        <div class="form-inline">
+            <label for="colorFilter" class="mr-2" style="color: rgb(54, 79, 179);" >Filter by Color:</label>
+            <select id="colorFilter" class="form-control mr-2" >
+                <option value="all">All</option>
+                <option value="red">Red</option>
+                <option value="pink">Pink</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="blue">Blue</option>
+            </select>
+            <button onclick="filterFlowers()" class="btn btn-primary">Apply Filter</button>
+            <button onclick="showTotalFlowers()" class="btn btn-primary mt-3">Show The Total Numbers Flowers</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="flower-list" class="flower-list row"></div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Include any additional scripts or links here -->
+
+</body>
+
+</html>

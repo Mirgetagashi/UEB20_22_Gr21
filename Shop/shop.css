@@ -6,6 +6,7 @@ html{
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
 
 /*hederi*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap');
 
 header{
 
@@ -65,7 +66,7 @@ header{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif ;
     list-style: none;
     text-decoration: none;
 }
@@ -79,16 +80,16 @@ a {
 body {
     height: 100vh;
     position: relative;
-    background-color: rgb(182, 199, 224);
+    background: url(/Photos/3.png);
     
 }
 
 
 #seksioni-produktet {
     margin-right: 0;
-    margin-left: 150px;
+    margin-left: 7%;
     display: flex;
-    position: fixed;
+    
     
 }
 
@@ -214,7 +215,7 @@ body {
 
 #yourCart {
     position: fixed;
-    right: 75px;
+    right: 1%;
     top: 100px;
     width: 250px;
     height: 550px;
@@ -355,6 +356,138 @@ dl dd.inline {
 
 
 
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 60px; 
+  }
+
+  header {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .navlistt, .menu a {
+    margin-left: 20px;
+  }
+
+  .container {
+    margin: 0;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+    column-gap: 0;
+    margin-left: 20px;
+    margin-right: 20px; 
+  }
+
+  .container div div a img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  .category {
+    margin-top: 50px;
+  }
+
+  #yourCart {
+    right: 20px;
+    top: 60px;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .custom-shape-divider-top-1610755808 svg {
+    width: 100%;
+  }
+
+  .custom-shape-divider-bottom-1610755546 svg {
+    width: 100%;
+  }
+}
 
 
 
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 60px; 
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 32px;
+  }
+
+  .navlistt, .menu a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+
+  #menu-icon {
+    display: block;
+  }
+
+  .container {
+    margin: 0;
+    grid-template-columns: 1fr;
+    row-gap: 2em;
+    column-gap: 0;
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .container div div a img {
+    height: 200px;
+  }
+
+  .category {
+    margin-top: 30px;
+    font-size: 120%;
+  }
+
+  #yourCart {
+    right: 10px;
+    top: 60px;
+    width: 90%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 0;
+  }
+
+  #scrollable {
+    max-height: 280px;
+  }
+
+  .custom-shape-divider-top-1610755808 svg,
+  .custom-shape-divider-bottom-1610755546 svg {
+    width: 100%;
+  }
+}
+
+
+@media (max-width:1540px){
+  header{
+     padding: 15px 3%;
+     transition: .2s;
+  }
+  .icon{
+     padding: 0 3%;
+     transition: .2s;
+  }
+  .scroll-down{
+     right: 3%;
+     transform: .2s;
+
+  }
+  
+}
+
+@media (min-width: 800px) {
+  #seksioni-produktet{
+    margin-right: 0%;
+  }
+}
