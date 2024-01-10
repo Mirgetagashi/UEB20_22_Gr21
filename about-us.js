@@ -49,8 +49,10 @@ for (let i = 0; i < 10; i++) {
 }
 
 
-const submitButton = document.getElementById('submitBtn');
-submitButton.addEventListener('click', function(event) {
-    event.preventDefault();
-    alert('Thank you for rating us!');
-})
+
+
+  
+  
+  
+  
+  

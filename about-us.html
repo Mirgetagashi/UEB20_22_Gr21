@@ -90,15 +90,16 @@
         </div>
     </section>
     <div class="rating">
-    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
-      <h2>Rate Us</h2>
-      <label for="a">Rating:</label>
-      <input type="range" id="a" value="50">
-       <input type="number" id="b" value="0">
-      <output name="x" for="a b"></output>
-      <button type="submit" id="submitBtn">Submit</button>
-  </form>
-</div>
+      <form oninput="x.value=parseInt(a.value)+parseInt(b.value)" id="ratingForm">
+        <h2>Rate Us</h2>
+        <label for="a">Rating:</label>
+        <input type="range" id="a" value="50">
+        <input type="number" id="b" value="0">
+        <output name="x" for="a b"></output>
+        <button type="submit" id="submitBtn">Submit</button>
+      </form>
+    </div>
+<audio id="audio" src="/audios/button.mp3"></audio>
     <footer class="site-footer" style="background-color: transparent;">
         <div class="container">
            <div class="row mb-5">
@@ -160,5 +161,23 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Bootstrap JS and Popper.js -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+<script>
+  document.getElementById('submitBtn').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    var audio = document.getElementById('audio');
+    if (audio) {
+      audio.currentTime = 0; // Reset the audio to the beginning
+      audio.play(); // Play the audio immediately when the button is clicked
+
+      // Optionally, add a delay or any other action after the audio finishes playing
+      audio.onended = function() {
+        // Your additional actions after audio finishes playing
+        document.getElementById('ratingForm').submit(); // Submit the form after audio finishes playing
+      };
+    }
+  });
+</script>
 </body>
 </html>
