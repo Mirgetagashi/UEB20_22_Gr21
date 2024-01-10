@@ -275,5 +275,25 @@ $.each(flowers.products, function (index, item) {
       $("#newTotal").text(" = " + newTotal + "\u20ac");
     }
   })
-  
-   
+
+
+
+
+
+//Kerkesat filter reduce edhe map
+
+  // Përdorimi i filter për të filtruar vetëm produktet me çmim mbi 20€ nga lista e luleve
+var expensiveFlowers = flowers.products.filter(function (item) {
+  return parseFloat(item.price) > 20;
+});
+
+// Përdorimi i map për të krijuar një listë të re me emrat e produkteve nga lista e luleve
+var flowerNames = flowers.products.map(function (item) {
+  return item.title;
+});
+
+// Përdorimi i reduce për të llogaritur çmimin total të produkteve në shportë
+var totalCartPrice = cart.reduce(function (accumulator, item) {
+  return accumulator + parseFloat(item.price);
+}, 0);
+
