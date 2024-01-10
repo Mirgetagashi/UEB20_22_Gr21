@@ -11,12 +11,12 @@ html{
  
  }
  header{
-<<<<<<< HEAD
+
     list-style: none;
     position: fixed;
-=======
+
     position: relative;
->>>>>>> 5a448fe99850911649ed588e00a7bb34b457dd47
+
     right: 0;
     top: 0;
     z-index: 1000;
