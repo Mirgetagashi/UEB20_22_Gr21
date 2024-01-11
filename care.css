@@ -140,6 +140,7 @@ p{
     color: aliceblue;
     background: rgba(0, 0, 0, .4);
     text-align: center;
+    
 }
 
 .tulips-container {
@@ -199,7 +200,7 @@ p{
 
 
 .daisy-info {
-    width: 72%;
+    width: 70%;
     text-align: center;
     margin-left: 0.5%;
 }
