@@ -11,8 +11,8 @@ const sr = ScrollReveal({
    delay: 450,
    reset: true
 });
-sr.reveal('.hero-text',{delay:200, origin:'top'});
-sr.reveal('.hero-img',{delay:450, origin:'top'});
+sr.reveal('.hero-text',{delay:300, origin:'left'});
+sr.reveal('.hero-img',{delay:300, origin:'right '});
 
 $(document).ready(function() {
    // Show and animate the logo on page load
