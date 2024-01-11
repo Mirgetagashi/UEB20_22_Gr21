@@ -315,3 +315,25 @@ body {
   z-index: 9999;
 }
 
+@media (max-width: 991.98px) {
+  .footer-link {
+    flex-direction: column; /* Stack footer links vertically */
+  }
+
+  .footer-link li {
+    margin-bottom: 10px; /* Add spacing between footer links */
+  }
+
+  .footer-social {
+    justify-content: center; /* Center social media icons */
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 767.98px) {
+  .col-md-3 {
+    width: 100%; /* Make columns full width on small screens */
+    margin-bottom: 20px; /* Add spacing between columns */
+  }
+}
+
