@@ -265,8 +265,8 @@ body {
 }
 
 .audio {
-  position: fixed;
-  bottom: 0;
+  position: relative;
+  top: 42%;
   left: 0;
 }
 
