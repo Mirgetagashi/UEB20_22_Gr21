@@ -130,9 +130,11 @@ header {
     text-decoration-color: black;
     width: 70%;
     text-align: center;
-    margin-left: 1%;
+    margin-left: -2%;
 }
-
+p{
+    margin-top: 3%;
+}
 .roses-info h2 {
     line-height: 35px;
     color: aliceblue;
@@ -163,7 +165,7 @@ header {
 
 .tulips-info {
     text-align: center;
-    width: 83%;
+    width: 85%;
 
 }
 
@@ -197,7 +199,7 @@ header {
 
 
 .daisy-info {
-    width: 68%;
+    width: 72%;
     text-align: center;
     margin-left: 0.5%;
 }
@@ -271,7 +273,7 @@ header {
 
 .orchid-info {
     text-align: center;
-    width: 100%;
+    width: 105%;
     margin-left: 3%;
 }
 
