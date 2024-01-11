@@ -1,3 +1,13 @@
+ // Perdorimi i fubksionit replace
+ var h1Element = document.getElementById('aboutUs');
+ //Merre tekstin nga h1
+ var currentText = h1Element.textContent;
+ // Funksioni replace
+ var modifiedText = currentText.replace(/a/g, 'A');
+ // Thirrja e tekstit te modifikuar
+ h1Element.textContent = modifiedText;
+
+
 const flowerCanvas = document.getElementById('flowerCanvas');
 const ctx = flowerCanvas.getContext('2d');
 
